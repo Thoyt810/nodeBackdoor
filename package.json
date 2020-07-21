@@ -1,0 +1,25 @@
+{
+  "name": "nodebackdoor",
+  "version": "1.0.0",
+  "description": "Read me generator from code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thoyt810/nodeBackdoor.git"
+  },
+  "keywords": [
+    "generator"
+  ],
+  "author": "Thomas Hoyt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thoyt810/nodeBackdoor/issues"
+  },
+  "homepage": "https://github.com/Thoyt810/nodeBackdoor#readme",
+  "dependencies": {
+    "inquirer": "^7.3.2"
+  }
+}
