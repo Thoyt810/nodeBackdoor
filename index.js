@@ -1,7 +1,8 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const util = require("util");
 
-inquirer.prompt([
+inquirer.promptUser([
     {
       type: "input",
       message: "What is your Github Username?",
@@ -28,12 +29,12 @@ inquirer.prompt([
         name: "license"
       },
       {
-        type: "input", //change
+        type: "input", // default answer 
         message: "What command should be run for to install dependencies?",
         name: "dependencies"
       },
       {
-        type: "input",
+        type: "input", // default answer
         message: "What command should be run to run tests?",
         name: "tests"
       },
