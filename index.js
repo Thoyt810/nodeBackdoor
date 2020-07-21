@@ -68,12 +68,14 @@ function promptUser() {
 }
 
 function makeReadMe(answers) {
+    return(
 `
+
 Github Username
 
 ${answers.username}
 
-##Github Email Adress
+##Github Email Address
 
 ${answers.github}
 
@@ -104,10 +106,11 @@ What does the User need to know about CONTRIBUTING to the Repository?
 ${answers.userInput}
 
 `
+    )
 }
 
 promptUser()
-    .then(function(answers) {
+    .then(function (answers) {
         const readMe = makeReadMe(answers);
-        return writeFile("READ.Me", readMe )
+        return writeFile("READ.Me", readMe)
     })
